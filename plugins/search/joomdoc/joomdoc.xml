@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search">
+    <name>PLG_SEARCH_JOOMDOC</name>
+    <author>ARTIO Ltd</author>
+    <creationDate>2015-04-24</creationDate>
+    <copyright>Copyright (C) 2015 ARTIO Ltd. All rights reserved.</copyright>
+    
+    <license>GNU General Public License</license>
+    
+        <authorEmail>info@artio.net</authorEmail>
+    <authorUrl>http://www.artio.net/joomla-extensions/document-management</authorUrl>
+    <version>4.0.3</version>
+    <description>PLG_SEARCH_JOOMDOC_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="joomdoc">joomdoc.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="document_link" type="radio" default="1" label="PLG_SEARCH_JOOMDOC_DOCUMENT_LINK" class="btn-group">
+                    <option value="1">PLG_SEARCH_JOOMDOC_DETAIL</option>
+                    <option value="2">PLG_SEARCH_JOOMDOC_DOWNLOAD</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

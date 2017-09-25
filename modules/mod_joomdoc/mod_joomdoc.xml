@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5.0" client="site">
+    <name>JOOMDOC_MODULE</name>
+    <author>ARTIO Ltd</author>
+    <creationDate>2015-04-24</creationDate>
+    <copyright>Copyright (C) 2015 ARTIO Ltd. All rights reserved.</copyright>  
+    
+    <license>GNU General Public License</license>
+    
+        <authorEmail>info@artio.net</authorEmail>
+    <authorUrl>http://www.artio.net/joomla-extensions/document-management</authorUrl>
+    <version>4.0.3</version>
+    <description>JOOMDOC_MODULE_DESC</description>
+    <!-- used only in alone package
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc.sys.ini</language>
+    </languages>    
+    used only in alone package -->
+    <files>
+        <folder>tmpl</folder>
+        <filename>config.php</filename>
+        <filename>index.html</filename>
+        <filename module="mod_joomdoc">mod_joomdoc.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_joomdoc/models/fields">
+                <field type="modal_parents" name="parent" label="JOOMDOC_MODULE_PARENTS" default="" description="JOOMDOC_MODULE_PARENTS_DESC" />
+                <field type="list" name="mod" label="JOOMDOC_MODULE_MOD" description="JOOMDOC_MODULE_MOD_DESC">
+                    <option value="1">JOOMDOC_MODULE_NEWEST</option>
+                    <option value="2">JOOMDOC_MODULE_POPULAR</option>
+                </field>
+                <field type="text" name="limit" label="JOOMDOC_MODULE_LIMIT" default="5" description="JOOMDOC_MODULE_LIMIT_DESC" size="5" class="input-mini" />
+                <field type="radio" class="btn-group"  name="show_text" label="JOOMDOC_MODULE_SHOW_TEXT" default="1" description="JOOMDOC_MODULE_SHOW_TEXT_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="text" name="crop_length" label="JOOMDOC_MODULE_CROP_LENGTH" default="50" description="JOOMDOC_MODULE_CROP_LENGTH_DESC" size="5" class="input-mini" />
+                <field type="radio" class="btn-group"  name="show_icons" label="JOOMDOC_MODULE_SHOW_ICONS" default="0" description="JOOMDOC_MODULE_SHOW_ICONS_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="radio" class="btn-group"  name="show_filesize" label="JOOMDOC_MODULE_SHOW_FILESIZE" default="0" description="JOOMDOC_MODULE_SHOW_FILESIZE_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="list" name="link_type" label="JOOMDOC_MODULE_LINK_TYPE" description="JOOMDOC_MODULE_LINK_TYPE_DESC">
+                    <option value="detail">JOOMDOC_MODULE_LINK_DETAIL</option>
+                    <option value="download">JOOMDOC_MODULE_LINK_DOWNLOAD</option>
+                </field>
+               	<field type="radio" class="btn-group"  name="show_listfields" label="JOOMDOC_MODULE_SHOW_LISTFIELDS" default="1" description="JOOMDOC_MODULE_SHOW_LISTFIELDS_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>    
+            </fieldset>
+            <fieldset name="advanced">
+                <field type="list" name="layout" label="JOOMDOC_MODULE_LAYOUT" default="default"  description="JOOMDOC_MODULE_LAYOUT_DESC">
+                    <option value="default">JOOMDOC_MODULE_LAYOUT_DEFAULT</option>
+                </field>
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+           </fieldset>
+        </fields>
+    </config>
+</extension>   

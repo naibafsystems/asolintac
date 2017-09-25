@@ -1,0 +1,160 @@
+ARTIO JoomDOC4 Changelog
+(C) 2015 ARTIO International Co.
+--------------------------------
+
+--- 4.0.4 --- [24.10.2016]
+new - multiple upload by drop and drag
+imp - user has to allow document notification 
+imp - editing of document splited into tabs
+fix - migrating of documents
+fix - updating of component
+
+--- 4.0.3 --- [24.04.2015]
+new - show document preview by EDocs
+new - access document by single user
+new - create folder on front-end
+new - copy and move document on front-end
+new - show WebDAV edit button on front-end document list
+new - custom field of type suggest
+new - create document automatically after upload file
+imp - use natural sorting of document list
+imp - use separate input field for every searching area
+imp - save file version with edit by WebDAV
+imp - select user-group which receive e-mail notification
+imp - handle WebDAV by SabreDAV or ApacheDAV
+fix - use title and meta-data of active menu item
+fix - button to insert document link into article
+fix - document searching with UTF-8 texts
+fix - plug-in for global searching
+fix - content elements of JoomFISH and FaLang
+fix - delete default title and meta-data
+fix - filter document list by parent folder
+fix - document access level
+
+--- 4.0.2 --- [02.05.2014]
+imp - update WebDAV
+imp - compatibility with Joomla! 3.2.4 and Joomla! 3.3.0
+
+--- 4.0.1 --- [22.01.2014]
+new - custom fields
+new - searching configuration
+new - contentelements for JoomFISH & FaLang
+new - bread crumbs
+imp - performance
+imp - migration from DocMAN 1.6
+imp - hide license in document list
+imp - tune up for J!3.2.1 & J!2.5.17
+fix - document versioning
+fix - modal document selector
+fix - modal window pagination
+fix - hide download in document list
+
+--- 4.0.0 --- [12.07.2013]
+new - reindex fulltext search
+new - trash old versions
+new - rename tree explorer root
+
+--- 4.0.0-beta1 --- [13-06-2013]
+new - new icon sets, possibilty to select iconset for front-end and back-end separately
+new - config option (for front-end and back-end) to list folders first
+imp - compatibility and design modifies for Joomla 3.0. Joomla 1.5 is no longer supported (use version 3.4.4)
+fix - fixed some bugs when using on Windows servers
+fix - not display title and metadata when document is unpublished (does not apply for owner)
+fix - many minor fixes
+
+--- 3.4.6 --- [12.07.2013]
+fix - tune up tree explorer
+
+--- 3.4.5 --- [17.06.2013]
+new - rename root folder in tree explorer - see configuration/root name
+new - reindex existing documents for full text search (paid only with catdoc) - see documents/toolbar/reindex
+fix - collapse tree explorer when open file detail
+fix - safe link document from article
+fix - select document to article in the front-end
+fix - mismatch in label show folder/file
+
+--- 3.4.4 --- [23.04.2013]
+fix - lost backlash in request with windows
+fix - tree explorer
+
+--- 3.4.3 --- [07.01.2013]
+fix - root link in explorer module
+
+--- 3.4.2 --- [11.06.2012]
+new - versioning mailing
+
+--- 3.4.1 --- [25.05.2012]
+fix - PHP notice (Notice: Undefined variable: lastLevel)
+
+--- 3.4.0 --- [04.05.2012]
+new - symbolic links (only enterprise edition)
+fix - Tree Explorer, some folder's branches could be non closed
+
+--- 3.3.0 --- [23.03.2012]
+new - Tree Explorer
+
+--- 3.2.8 --- [15.02.2012]
+new - migrate JoomDOC2 URLs in JoomSEF and Joomla content/menu/modules to JoomDOC3 format
+fix - WebDAV didn't work with JoomSEF
+
+--- 3.2.7 --- [27.01.2012]
+fix - Joomla 2.5 compatibility
+
+--- 3.2.6 --- [24.01.2012]
+new - migration from DocMAN/JoomDOC2
+
+--- 3.2.5 --- [19.01.2012]
+fix - documents ordering direction
+
+--- 3.2.4 --- [04.01.2012]
+fix - force import of class JFilterOutput
+fix - combo module bug (module used the same configuration for all instances)
+
+--- 3.2.3 --- [19.10.2011]
+fix - fix control root access
+fix - quote paths in line command
+fix - remove __DIR__ using for PHP compatibility
+new - search module 
+new - combo module (newest or popular documents)
+
+--- 3.2.2 --- [15.09.2011]
+fix - PHP 5.3.x notices
+
+--- 3.2.1 --- [12.09.2011]
+new - add Spanish localization
+
+--- 3.2.0 --- [09.09.2011]
+new - pagination backend/frontend
+new - synchronize items in database with items real in docroot
+new - make folder's/file's name's safe
+new - cpanel icons manual/changelog/support
+new - document's version note required
+new - apply content plugin's to document description 
+new - document's licenses
+new - trash/restore file version
+new - revert archived file version
+new - off/on (with ACL) versioning in subfolders
+new - delete files force or trash and restore
+new - insert into article link to detail or document download
+fix - if turn on display no display files without documents - no applied to folders
+
+--- 3.1.3 --- [08.09.2011]
+fix - auto load class JElement if isn't included
+
+--- 3.1.2 --- [01.09.2011]
+fix - WebDav setting turn off/on in Joomla 1.5.x
+
+--- 3.1.1 --- [25.08.2011]
+new - option to disable webdav
+new - delete document's to trash
+fix - reverse virtual path to real path
+fix - menu itemid navigation
+fix - Mootools conflict in Joomla 1.5.x
+
+--- 3.1.0 --- [15.08.2011] 
+new - ACL
+new - copy/move items in backend
+new - edit/delete/upload items in frontend
+new - menu item option show/hide folder/file document description in frontend
+new - menu item option show/hide links folder/file open
+new - virtual root

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_joomdoc/models/fields">
+        <field name="id" type="text" class="readonly input-mini" label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" />
+
+        <field name="asset_id" type="hidden" filter="unset" />
+
+        <field name="path" type="text" label="JOOMDOC_FIELD_PATH_LABEL"
+               description="" size="60" default="" readonly="true" class="input-xxlarge"/>
+            
+        <field name="version" type="text" label="JOOMDOC_FIELD_VERSION_LABEL"
+               description="" size="11" default="" readonly="true" class="input-mini" />
+            
+        <field name="versionNote" type="textarea" label="JOOMDOC_FIELD_VERSION_NOTE_LABEL"
+               description="" rows="4" cols="40" default="" class="input-xxlarge" />
+
+        <field name="title" type="text" label="JGLOBAL_TITLE"
+               description="JFIELD_TITLE_DESC" class="inputbox input-xxlarge" size="55" required="true" />
+            
+        <field name="alias" type="text" label="JFIELD_ALIAS_LABEL"
+               description="JFIELD_ALIAS_DESC" class="inputbox input-xxlarge" size="55" />
+
+        <field name="description" type="editor" class="inputbox"
+               label="JOOMDOC_FIELD_ARTICLETEXT_LABEL" description="JOOMDOC_FIELD_ARTICLETEXT_DESC"
+               buttons="true" filter="safehtml" />
+
+        <field name="state" type="list" label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC" filter="intval"
+               default="1">
+            <option value="1">
+                JPUBLISHED</option>
+            <option value="0">
+                JUNPUBLISHED</option>
+            <option value="-2">
+                JTRASHED</option>
+        </field>
+        
+        <!-- 
+       <field name="favorite" type="radio" label="JOOMDOC_FAVORITE" class="inputbox" default="0">
+           <option value="1">JYES</option>
+           <option value="0">JNO</option>
+       </field>
+        -->
+        <field name="favorite" type="checkbox" label="JOOMDOC_FAVORITE" class="inputbox" default="0" value="1" />
+        
+        <field name="license" type="license" label="JOOMDOC_LICENSE" class="inputbox" />
+
+        <field name="buttonspacer" description="JGLOBAL_ACTION_PERMISSIONS_DESCRIPTION"
+               type="spacer" />
+
+        <field name="created" type="calendar" label="JOOMDOC_FIELD_CREATED_LABEL"
+               description="" class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+               filter="user_utc" />
+
+        <field name="created_by" type="user" label="JOOMDOC_FIELD_CREATED_BY_LABEL"
+               description="" />
+
+        <field name="modified" type="calendar" class="readonly"
+               label="JGLOBAL_FIELD_MODIFIED_LABEL" description="" size="22"
+               readonly="true" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+
+        <field name="modified_by" type="user" label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+               class="readonly" readonly="true" filter="unset" />
+
+        <field name="checked_out" type="hidden" filter="unset" />
+
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+        <field name="publish_up" type="calendar" label="JOOMDOC_FIELD_PUBLISH_UP_LABEL"
+               description="" class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+               filter="user_utc" />
+
+        <field name="publish_down" type="calendar"
+               label="JOOMDOC_FIELD_PUBLISH_DOWN_LABEL" description="" class="inputbox"
+               format="%Y-%m-%d %H:%M:%S" size="22" filter="user_utc" />
+
+        <field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+               description="JFIELD_ACCESS_DESC" class="inputbox" />		
+        
+        <field name="download" type="checkbox" label="JOOMDOC_DOWNLOAD_FILE" class="inputbox" default="0" value="1" />        
+
+        <field name="rules" type="rules" label=""
+               translate_label="false" class="inputbox" filter="rules" component="com_joomdoc"
+               section="document" validate="rules" />
+
+    </fieldset>
+
+    <fields name="params">
+        <fieldset name="jbasic" label="JOOMDOC_PARAMS">
+            <field name="files_without_doc" type="radio" default="1" class="btn-group"
+                   label="JOOMDOC_FIELD_FILES_WITHOUT_DOC_LABEL" description="JOOMDOC_FIELD_FILES_WITHOUT_DOC_DESC">
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field name="metakeywords" type="textarea" label="JOOMDOC_METAKEYWORDS" description="JOOMDOC_METAKEYWORDS_DESC" rows="5" cols="40" />
+            <field name="metadescription" type="textarea" label="JOOMDOC_METADESCRIPTION" description="JOOMDOC_METADESCRIPTION_DESC" rows="10" cols="40" />
+        </fieldset>
+        <fieldset name="mailing" label="JOOMDOC_VERSIONING_MAILING">
+            <field name="versioning_mailing_document_based" type="radio" class="btn-group" label="JOOMDOC_VERSIONING_MAILING_DOCUMENT_BASED" description="JOOMDOC_VERSIONING_MAILING_DOCUMENT_BASED_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="versioning_mailing_allow" type="radio" class="btn-group" default="0" label="JOOMDOC_VERSIONING_MAILING_ALLOW" description="JOOMDOC_VERSIONING_MAILING_ALLOW_DESC">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

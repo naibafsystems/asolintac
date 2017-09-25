@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="JOOMDOC_DOCUMENTS_DEFAULT_LAYOUT" option="JOOMDOC_DOCUMENTS_DEFAULT_LAYOUT_OPTION">
+		<message>
+			<![CDATA[JOOMDOC_DOCUMENTS_DEFAULT_LAYOUT_DESC]]>
+		</message>
+	</layout>
+    <!-- Joomla 1.6.x -->
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_joomdoc/models/fields">
+			<field name="path" type="modal_documents" label="JOOMDOC_FIELD_SELECT_DOCUMENT_LABEL"
+				required="false" description="JOOMDOC_FIELD_SELECT_DOCUMENT_DESC" />
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="basic" label="JOOMDOC_DOCUMENTS_SETTINGS_LABEL">
+			<field name="show_subfolders" type="radio" label="JOOMDOC_SHOW_SUBFOLDERS"
+				description="JOOMDOC_SHOW_SUBFOLDERS_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			<field name="files_without_doc" type="radio" label="JOOMDOC_FIELD_FILES_WITHOUT_DOC_LABEL"
+				description="JOOMDOC_FIELD_FILES_WITHOUT_DOC_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			<field name="document_ordering" type="list" label="JOOMDOC_DOCUMENT_ORDERING"
+				description="JOOMDOC_DOCUMENT_ORDERING_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="ordering">JOOMDOC_ORDERING_ORDERING</option>
+				<option value="title">JOOMDOC_ORDERING_TITLE</option>
+				<option value="publish_up">JOOMDOC_ORDERING_DATE</option>
+			</field>
+			<field name="file_ordering" type="list" label="JOOMDOC_FILE_ORDERING"
+				description="JOOMDOC_FILE_ORDERING_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="path">JOOMDOC_ORDERING_PATH</option>
+				<option value="upload">JOOMDOC_ORDERING_UPLOAD</option>
+				<option value="hits">JOOMDOC_ORDERING_HITS</option>
+			</field>
+            <field name="ordering_direction" type="list" label="JOOMDOC_ORDERING_DIRECTION"
+                description="JOOMDOC_ORDERING_DIRECTION_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="asc">JOOMDOC_ORDERING_DIRECTION_ASCENDING</option>
+                <option value="desc">JOOMDOC_ORDERING_DIRECTION_DESCENDING</option>
+            </field>    
+			<field name="show_fileicon" type="radio" label="JOOMDOC_SHOW_FILEICON"
+				description="JOOMDOC_SHOW_FILEICON_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			<field name="show_filesize" type="radio" label="JOOMDOC_SHOW_FILESIZE"
+				description="JOOMDOC_SHOW_FILESIZE_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			<field name="show_created" type="radio" label="JOOMDOC_SHOW_CREATED"
+				description="JOOMDOC_SHOW_CREATED_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			<field name="show_modified" type="radio" label="JOOMDOC_SHOW_MODIFIED"
+				description="JOOMDOC_SHOW_MODIFIED_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			<field name="show_hits" type="radio" label="JOOMDOC_SHOW_HITS"
+				description="JOOMDOC_SHOW_HITS_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+            <field name="show_open_file" type="radio" label="JOOMDOC_SHOW_OPEN_FILE"
+                description="JOOMDOC_SHOW_OPEN_FILE_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+            <field name="show_download_file" type="radio" label="JOOMDOC_SHOW_DOWNLOAD_FILE"
+                description="JOOMDOC_SHOW_DOWNLOAD_FILE_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+            <field name="show_open_folder" type="radio" label="JOOMDOC_SHOW_OPEN_FOLDER"
+                description="JOOMDOC_SHOW_OPEN_FOLDER_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+            <field name="show_file_desc" type="radio" label="JOOMDOC_SHOW_FILE_DESC"
+                description="JOOMDOC_SHOW_FILE_DESC_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+            <field name="show_folder_desc" type="radio" label="JOOMDOC_SHOW_FOLDER_DESC"
+                description="JOOMDOC_SHOW_FOLDER_DESC_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+            <field name="show_license" type="radio" label="JOOMDOC_SHOW_LICENSE_DESC"
+                description="JOOMDOC_SHOW_LICENSE_DESC_DESC" class="btn-group">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>            
+		</fieldset>
+	</fields>
+</metadata>

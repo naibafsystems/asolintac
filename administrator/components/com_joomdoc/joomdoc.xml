@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5">
+    <name>JoomDOC</name>
+    <creationDate>2016-10-25</creationDate>
+    <author>ARTIO Ltd</author> 
+    <authorEmail>info@artio.net</authorEmail>
+    <authorUrl>http://www.artio.net/joomla-extensions/document-management</authorUrl>
+    <copyright>Copyright (C) 2016 ARTIO Ltd. All rights reserved.</copyright> 
+    
+    <license>http://www.gnu.org/copyleft/gpl.html</license>
+    
+        
+    <licenser>GNU/GPL</licenser>
+    
+                
+    <version>4.0.4 Standard</version>
+    
+    <scriptfile>install.php</scriptfile>	
+    <languages folder="language/site">
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc.sys.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc_explorer.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc_explorer.sys.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc_search.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc_search.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_explorer.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_explorer.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_search.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_search.sys.ini</language>
+	<language tag="fi-FI">fi-FI/fi-FI.mod_joomdoc.ini</language>
+        <language tag="fi-FI">fi-FI/fi-FI.mod_joomdoc.sys.ini</language>
+        <language tag="fi-FI">fi-FI/fi-FI.mod_joomdoc_explorer.ini</language>
+        <language tag="fi-FI">fi-FI/fi-FI.mod_joomdoc_explorer.sys.ini</language>
+        <language tag="fi-FI">fi-FI/fi-FI.mod_joomdoc_search.ini</language>
+        <language tag="fi-FI">fi-FI/fi-FI.mod_joomdoc_search.sys.ini</language>
+    </languages>
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>views</folder>
+        <folder>models</folder>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>joomdoc.php</filename>
+        <filename>router.php</filename>
+    </files>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <administration>
+        <languages folder="language/admin">
+            <language tag="cs-CZ">cs-CZ/cs-CZ.com_joomdoc.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.com_joomdoc.menu.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.com_joomdoc.sys.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.com_joomdoc.upgrade.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.plg_editors-xtd_joomdoc.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.plg_editors-xtd_joomdoc.sys.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.plg_search_joomdoc.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.plg_search_joomdoc.sys.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_joomdoc.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_joomdoc.menu.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_joomdoc.sys.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_joomdoc.upgrade.ini</language>
+            <language tag="en-GB">en-GB/en-GB.plg_editors-xtd_joomdoc.ini</language>
+            <language tag="en-GB">en-GB/en-GB.plg_editors-xtd_joomdoc.sys.ini</language>
+            <language tag="en-GB">en-GB/en-GB.plg_search_joomdoc.ini</language>
+            <language tag="en-GB">en-GB/en-GB.plg_search_joomdoc.sys.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_joomdoc.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_joomdoc.menu.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_joomdoc.sys.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_joomdoc.upgrade.ini</language>
+            <language tag="fa-IR">fa-IR/fa-IR.com_joomdoc.ini</language>
+            <language tag="fi-FI">fi-FI/fi-FI.com_joomdoc.ini</language>
+            <language tag="fi-FI">fi-FI/fi-FI.com_joomdoc.menu.ini</language>
+            <language tag="fi-FI">fi-FI/fi-FI.com_joomdoc.sys.ini</language>
+            <language tag="fi-FI">fi-FI/fi-FI.com_joomdoc.upgrade.ini</language>
+        </languages>
+        <menu img="../components/com_joomdoc/assets/images/icon-16-joomdoc.png">JOOMDOC</menu>
+        <submenu>
+            <menu img="../components/com_joomdoc/assets/images/icon-16-cpanel.png" link="option=com_joomdoc">JOOMDOC_CONTROL_PANEL</menu>
+            <menu img="../components/com_joomdoc/assets/images/icon-16-documents.png" link="option=com_joomdoc&amp;view=documents">JOOMDOC_DOCUMENTS</menu>				
+            <menu img="../components/com_joomdoc/assets/images/icon-16-license.png" link="option=com_joomdoc&amp;view=licenses">JOOMDOC_LICENSE</menu>
+            <menu img="../components/com_joomdoc/assets/images/icon-16-upgrade.png" link="option=com_joomdoc&amp;view=upgrade">JOOMDOC_UPGRADE</menu>
+            <menu img="../components/com_joomdoc/assets/images/icon-16-migration.png" link="option=com_joomdoc&amp;view=migration">JOOMDOC_MIGRATION</menu>
+        </submenu>
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>extensions</folder>
+            <folder>libraries</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>defines.php</filename>
+            <filename>changelog.txt</filename>
+            <filename>index.html</filename>
+            <filename>joomdoc.php</filename>
+        </files>
+    </administration>
+    <updateservers>
+                        
+        <server name="ARTIO JoomDOC Updates" type="extension" priority="1">http://www.artio.net/joomla-updates/list/com_joomdoc4_std.xml</server>
+        
+    </updateservers>
+</extension>

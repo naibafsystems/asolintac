@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_joomdoc">
+	<section name="component">
+        <!-- configure component -->
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+        <!-- entry component -->
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <!-- manage licenses -->
+        <action name="core.licenses" title="JOOMDOC_ACTION_LICENSES" description="JOOMDOC_ACTION_LICENSES_DESC" />
+        <!-- create folder -->
+        <action name="core.newfolder" title="JOOMDOC_ACTION_NEWFOLDER" description="JOOMDOC_ACTION_NEWFOLDER_DESC" />
+        <!-- upload/reupload file -->
+        <action name="core.uploadfile" title="JOOMDOC_ACTION_UPLOADFILE" description="JOOMDOC_ACTION_UPLOADFILE_DESC" />
+                <!-- rename file/folder -->
+        <action name="core.rename" title="JOOMDOC_ACTION_RENAME" description="JOOMDOC_ACTION_RENAME_DESC" />
+        <!-- copy/move folder/file -->
+        <action name="core.copy.move" title="JOOMDOC_ACTION_COPY_MOVE" description="JOOMDOC_ACTION_COPY_MOVE_DESC" />
+        <!-- create new document -->
+        <action name="core.create" title="JOOMDOC_ACTION_CREATEDOC" description="JOOMDOC_ACTION_CREATEDOC_DESC" />
+        <!-- edit document -->
+        <action name="core.edit" title="JOOMDOC_ACTION_EDIT" description="JOOMDOC_ACTION_EDIT_DESC" />
+        <!-- edit document state -->
+        <action name="core.edit.state" title="JOOMDOC_ACTION_EDIT_STATE" description="JOOMDOC_ACTION_EDIT_STATE_DESC" />
+        <!-- edit own document -->
+        <action name="core.edit.own" title="JOOMDOC_ACTION_EDIT_OWN" description="JOOMDOC_ACTION_EDIT_OWN_DESC" />
+        <!-- enter documents folder -->
+        <action name="core.enterfolder" title="JOOMDOC_ACTION_ENTERFOLDER" description="JOOMDOC_ACTION_ENTERFOLDER_DESC" />
+        <!-- view document/file details (created/hits/description)  -->
+        <action name="core.viewfileinfo" title="JOOMDOC_ACTION_VIEWFILEINFO" description="JOOMDOC_ACTION_VIEWFILEINFO_DESC" />
+                <action name="core.untrash" title="JOOMDOC_ACTION_UNTRASH" description="JOOMDOC_ACTION_UNTRASH_DESC" />
+        <!-- download file and versions -->
+        <action name="core.download" title="JOOMDOC_ACTION_DOWNLOAD" description="JOOMDOC_ACTION_DOWNLOAD_DESC" />
+        <!-- delete file -->
+        <action name="core.deletefile" title="JOOMDOC_ACTION_DELETEFILE" description="JOOMDOC_ACTION_DELETEFILE_DESC" />
+        <!-- delete document -->
+        <action name="core.delete" title="JOOMDOC_ACTION_DELETEDOC" description="JOOMDOC_ACTION_DELETEDOC_DESC" />
+        <action name="core.refresh" title="JOOMDOC_ACTION_REFRESH" description="JOOMDOC_ACTION_REFRESH_DESC" />
+        <action name="core.managafields" title="JOOMDOC_ACTION_MANAGE_FIELDS" description="JOOMDOC_ACTION_MANAGE_FIELDS_DESC" />
+        <action name="core.receive.notification" title="JOOMDOC_ACTION_RECEIVE_NOTIFICATION" description="JOOMDOC_ACTION_RECEIVE_NOTIFICATION_DESC" />
+    </section>
+	<section name="document">
+        <!-- create folder -->
+        <action name="core.newfolder" title="JOOMDOC_ACTION_NEWFOLDER" description="JOOMDOC_ACTION_NEWFOLDER_DESC" />
+        <!-- upload/reupload file -->
+        <action name="core.uploadfile" title="JOOMDOC_ACTION_UPLOADFILE" description="JOOMDOC_ACTION_UPLOADFILE_DESC" />
+                <!-- rename file/folder -->
+        <action name="core.rename" title="JOOMDOC_ACTION_RENAME" description="JOOMDOC_ACTION_RENAME_DESC" />
+        <!-- copy/move folder/file -->
+        <action name="core.copy.move" title="JOOMDOC_ACTION_COPY_MOVE" description="JOOMDOC_ACTION_COPY_MOVE_DESC" />
+        <!-- create new document -->
+        <action name="core.create" title="JOOMDOC_ACTION_CREATEDOC" description="JOOMDOC_ACTION_CREATEDOC_DESC" />
+        <!-- edit document -->
+        <action name="core.edit" title="JOOMDOC_ACTION_EDIT" description="JOOMDOC_ACTION_EDIT_DESC" />
+        <!-- edit document state -->
+        <action name="core.edit.state" title="JOOMDOC_ACTION_EDIT_STATE" description="JOOMDOC_ACTION_EDIT_STATE_DESC" />
+        <!-- edit own document -->
+        <action name="core.edit.own" title="JOOMDOC_ACTION_EDIT_OWN" description="JOOMDOC_ACTION_EDIT_OWN_DESC" />
+        <!-- enter documents folder -->
+        <action name="core.enterfolder" title="JOOMDOC_ACTION_ENTERFOLDER" description="JOOMDOC_ACTION_ENTERFOLDER_DESC" />
+        <!-- view document/file details (created/hits/description)  -->
+        <action name="core.viewfileinfo" title="JOOMDOC_ACTION_VIEWFILEINFO" description="JOOMDOC_ACTION_VIEWFILEINFO_DESC" />
+                <action name="core.untrash" title="JOOMDOC_ACTION_UNTRASH" description="JOOMDOC_ACTION_UNTRASH_DESC" />
+        <!-- download file and versions -->
+        <action name="core.download" title="JOOMDOC_ACTION_DOWNLOAD" description="JOOMDOC_ACTION_DOWNLOAD_DESC" />
+        <!-- delete file -->
+        <action name="core.deletefile" title="JOOMDOC_ACTION_DELETEFILE" description="JOOMDOC_ACTION_DELETEFILE_DESC" />
+        <!-- delete document -->
+        <action name="core.delete" title="JOOMDOC_ACTION_DELETEDOC" description="JOOMDOC_ACTION_DELETEDOC_DESC" />
+        <action name="core.receive.notification" title="JOOMDOC_ACTION_RECEIVE_NOTIFICATION" description="JOOMDOC_ACTION_RECEIVE_NOTIFICATION_DESC" />
+	</section>
+</access>

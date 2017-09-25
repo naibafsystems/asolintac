@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site">
+    <name>JOOMDOC_SEARCH</name>
+    <author>ARTIO Ltd</author>
+    <creationDate>2015-04-24</creationDate>
+    <copyright>Copyright (C) 2015 ARTIO Ltd. All rights reserved.</copyright>       
+    
+    <license>GNU General Public License</license>
+    
+        <authorEmail>info@artio.net</authorEmail>
+    <authorUrl>http://www.artio.net/joomla-extensions/document-management</authorUrl>
+    <version>4.0.3</version>
+    <description>JOOMDOC_SEARCH_DESC</description>
+    <!-- used only in alone package
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_search.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_search.sys.ini</language>
+    </languages>    
+    used only in alone package -->
+    <files>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename module="mod_joomdoc_search">mod_joomdoc_search.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_joomdoc/models/fields">
+                <field name="searchfield" type="searchfield" default="joomdoc_keywords" label="JOOMDOC_SEARCH_SEARCHFIELD" description="JOOMDOC_SEARCH_SEARCHFIELD_DESC" multiple="multiple">
+                    <option value="joomdoc_keywords">JOOMDOC_SEARCH_KEYWORDS</option>
+                    <option value="joomdoc_keywords_title">JOOMDOC_SEARCH_AREA_TITLE</option>
+                    <option value="joomdoc_keywords_text">JOOMDOC_SEARCH_AREA_TEXT</option>
+                    <option value="joomdoc_keywords_meta">JOOMDOC_SEARCH_AREA_META</option>
+                    <option value="joomdoc_keywords_full">JOOMDOC_SEARCH_AREA_FULL</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field type="list" name="layout" label="JOOMDOC_SEARCH_LAYOUT" default="default" >
+                    <option value="default">JOOMDOC_SEARCH_LAYOUT_DEFAULT</option>
+                </field>
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>    

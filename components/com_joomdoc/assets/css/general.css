@@ -1,0 +1,836 @@
+/**
+ * @version		$Id$
+ * @package		Joomla.Administrator
+ * @subpackage	JoomDOC
+ * @author      ARTIO s.r.o., info@artio.net, http:://www.artio.net
+ * @copyright	Copyright (C) 2011 Artio s.r.o.. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+#joomdoc #pathway {
+	background-image: url("../images/icon-16-pathway.png");
+	background-repeat: no-repeat;
+	height: 16px;
+	line-height: 16px;
+	padding: 0 0 0 25px;
+	margin-bottom: 10px;
+}
+
+#jform_version,#jform_path,#jform_id {
+	background-color: #DDDDDD;
+}
+
+.icon-wrapper {
+    height: 300px !important;
+    width: 100% !important;
+}
+
+.clr {
+    
+    clear: both;
+        
+}
+
+.panel {
+    
+    padding: 5px;
+    
+}
+
+#content-sliders- {
+    
+    margin-left: 55px;
+    
+}
+#joomdoc .back {
+	background-image: url("../images/icon-16-back.png");
+	background-repeat: no-repeat;
+	height: 16px;
+	line-height: 16px;
+	padding: 4px 0px 0px 22px;
+	margin-left: 3em;
+}
+
+#joomdoc .hideMooTree {
+	background-image: url("../images/icon-16-tree_view.png");
+	background-repeat: no-repeat;
+	height: 16px;
+	line-height: 16px;
+	padding: 4px 0px 0px 22px;
+	margin-left: 3em;
+	cursor: pointer;
+}
+
+.folder {
+	background-image: url("../images/icon-16-folder.png");  /* default, is overriden by exact icon */
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	line-height: 16px;
+	padding-left: 25px;
+}
+
+.file {
+	background-image: url("../images/icon-16-file.png");  /* default, is overriden by exact icon */
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	line-height: 16px;
+	padding-left: 25px;
+}
+
+a.rename {
+	background-image: url("../images/icon-16-rename.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	width: 16px;
+}
+
+a.untrash {
+	background-image: url("../images/icon-16-untrash.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin-left: 20px;
+	width: 16px;
+}
+
+div.rename input {
+	width: 100%;
+}
+
+.editWebDav {
+	background-image: url("../images/icon-16-edit.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	width: 16px;
+}
+
+.lock {
+	background-image: url("../images/icon-16-lock.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	width: 16px;
+}
+
+.editWebDav strong,td .editWebDav span.j25 {
+	color: transparent;
+	font-size: 0px;
+}
+
+#editWebDav .editWebDav {
+	padding-left: 20px;
+	width: auto;
+}
+
+.icon-48-joomdoc {
+	background-image: url("../images/icon-48-joomdoc.png");
+}
+
+.icon-48-documents {
+	background-image: url("../images/icon-48-documents.png");
+}
+
+.icon-48-licenses {
+	background-image: url("../images/icon-48-license.png");
+}
+
+.icon-48-document {
+	background-image: url("../images/icon-48-document.png");
+}
+
+.icon-48-file {
+	background-image: url("../images/icon-48-file.png");
+}
+
+.icon-48-upgrade {
+	background-image: url("../images/icon-48-upgrade.png");
+}
+
+.icon-48-changelog {
+	background-image: url("../images/icon-48-changelog.png");
+}
+
+.icon-48-help_header {
+	background-image: url("../images/icon-48-help_header.png");
+}
+
+.icon-48-migration {
+	background-image: url("../images/icon-48-migration.png");
+}
+
+.icon-48-field {
+    background-image: url("../images/icon-48-field.png");
+}
+
+.icon-32-docs-delete,.icon-32-docs-delete_f2 {
+	background-image: url("../images/icon-32-docs-delete.png");
+}
+
+.icon-32-remove {
+	background-image: url("../images/icon-32-remove.png");
+}
+
+.icon-32-revert {
+	background-image: url("../images/icon-32-revert.png");
+}
+
+.icon-32-reflat {
+	background-image: url("../images/icon-32-reflat.png");
+}
+
+.icon-32-delete-symlink {
+	background-image: url("../images/icon-32-delete-symlink.png");
+}
+
+.icon-32-symlink {
+	background-image: url("../images/icon-32-symlink.png");
+}
+
+.icon-48-symlinks {
+	background-image: url("../images/icon-48-symlink.png");
+}
+
+#toolbar .icon-32-config {
+	background-image: url("../images/icon-32-config.png");
+}
+
+#toolbar .icon-32-purge {
+    background-image: url("../images/icon-32-purge.png");
+}
+
+#toolbar-restore .icon-32-restore {
+	background-image: url("../images/icon-32-restore.png");
+}
+
+#toolbar .icon-disabled {
+	float: left;
+	padding: 1px 5px;
+	white-space: nowrap;
+	width: auto;
+}
+
+#toolbar td .icon-disabled {
+	position: relative;
+	top: -8px;
+}
+
+#toolbar .icon-disabled  span {
+	background-position: 0 32px;
+	padding-bottom: 1px;
+}
+
+.blind {
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+}
+
+.addDocument {
+	background-image: url("../images/icon-16-add.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 16px;
+	padding-right: 20px;
+	width: 16px;
+}
+
+#documents .back {
+	background-image: url("../images/icon-16-back.png");
+	background-repeat: no-repeat;
+	display: block;
+	height: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: auto;
+}
+
+#documents .document h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#documents .document h2.icon {
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #DDDDDD;
+    background-position-y: 50%;
+    float: none;
+    padding: 6px 0 5px 40px;
+}
+
+#documents .document {
+	margin: 0;
+	padding: 0 0 20px;
+}
+
+#documents .document .info {
+	background-image: url("../images/dotline.png");
+	background-position: 0 bottom;
+	background-repeat: repeat-x;
+	padding: 5px 0;
+}
+
+#documents .document .info .clr {
+	clear: left;
+}
+
+#documents .document .info>span, #document .info>span {
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-position-y: 50%;
+    width: auto;
+}
+
+#documents .document .info .favorite,#document .info .favorite {
+	background-image: url("../images/icon-16-favorite.png");
+}
+
+#documents .document .info .filesize,#document .info .filesize {
+	background-image: url("../images/icon-16-filesize.png");
+}
+
+#documents .document .info .created,#document .info .created {
+	background-image: url("../images/icon-16-created.png");
+}
+
+#documents .document .info .modified,#document .info .modified {
+	background-image: url("../images/icon-16-modified.png");
+}
+
+#documents .document .info .hits,#document .info .hits {
+	background-image: url("../images/icon-16-hits.png");
+}
+
+#documents .document .info .field,#document .info .field {
+    padding-left: 0;
+}
+
+#documents .license,#document .license {
+	background-image: url("../images/icon-16-license.png");
+	background-repeat: no-repeat;
+	display: block;
+	height: 16px;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: auto;
+}
+
+#documents .document .toolbar .clr {
+	clear: left;
+}
+
+#documents .document .toolbar {
+	padding: 5px 0;
+}
+
+#documents .document .toolbar a, #document .toolbar a, #documents .document .toolbar a:hover, #document .toolbar a:hover {
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-position-y: 50%;
+    width: auto;
+}
+
+#documents .document .toolbar .open {
+	background-image: url("../images/icon-16-open.png");
+}
+
+#documents .document .toolbar .download,#document .toolbar .download {
+	background-image: url("../images/icon-16-download.png");
+}
+
+#documents .document .toolbar .add,#document .toolbar .add {
+	background-image: url("../images/icon-16-add.png");
+}
+
+#documents .document .toolbar .edit,#document .toolbar .edit {
+    background-repeat: no-repeat;
+	background-image: url("../images/icon-16-edit.png");
+}
+
+#documents .document .toolbar .delete,#document .toolbar .delete {
+	background-image: url("../images/icon-16-trash.png");
+}
+
+#documents .document .toolbar .deleteDocument,#document .toolbar .deleteDocument {
+	background-image: url("../images/icon-16-docs-delete.png");
+}
+
+#documents .document .toolbar .publish,#document .toolbar .publish {
+	background-image: url("../images/icon-16-publish.png");
+}
+
+#documents .document .toolbar .unpublish,#document .toolbar .unpublish {
+	background-image: url("../images/icon-16-unpublish.png");
+}
+
+#document table.admintable td.key,#document table.admintable td {
+	padding: 5px;
+}
+
+#document table.admintable td.key {
+	font-weight: bold;
+}
+
+#document .edittoolbar {
+	float: right;
+}
+
+#document .edittoolbar a,#document .edittoolbar a:hover {
+	background-position: 15px 0;
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 20px;
+	padding-top: 32px;
+	text-align: center;
+	width: 62px;
+}
+
+#document #toolbar {
+  float: right;
+}
+
+#document #toolbar li {
+  float: left;
+  list-style: none outside none;
+}
+
+#document #toolbar a {
+  color: #135CAE;
+  display: block;
+  float: left;
+  height: 52px;
+  line-height: 1em;
+  padding: 0;
+  text-align: center;
+  width: 90px;
+}
+
+#document #toolbar a span {
+  display: block;
+  height: 32px;
+  margin-left: 29px;
+  width: 32px;
+}
+
+#document .edittoolbar .apply {
+	background-image: url("../images/icon-32-apply.png");
+}
+
+#document .edittoolbar .save {
+	background-image: url("../images/icon-32-save.png");
+}
+
+#document .edittoolbar .cancel {
+	background-image: url("../images/icon-32-cancel.png");
+}
+
+#document .edittoolbar .addSymLink {
+	background-image: url("../images/icon-32-symlink-f.png");
+}
+#document .edittoolbar .deleteSymLink {
+	background-image: url("../images/icon-32-delete-symlink-f.png");
+}
+
+#document .back {
+    background-image: url(../images/icon-16-back.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+}
+
+#document {
+	margin: 0;
+	padding: 0 0 20px;
+}
+
+#document .info {
+	padding: 5px 0;
+}
+
+#document .info .clr {
+	clear: left;
+}
+
+#document .toolbar .clr {
+	clear: left;
+}
+
+#document .toolbar {
+	padding: 5px 0;
+}
+
+#document .toolbar .download {
+    background-image: url(../images/icon-16-download.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    background-position-y: 50%;
+}
+
+.fileinfo {
+	background-image: url("../images/icon-16-filesize.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: right;
+	height: 16px;
+	width: 16px;
+}
+
+table.history thead th {
+	border: 1px solid #DDDDDD;
+	padding: 3px;
+}
+
+table.history tbody td {
+	border: 1px solid #DDDDDD;
+	padding: 3px;
+}
+
+#content-box label.edit {
+	margin-top: 4px;
+	min-width: 1px;
+	padding-right: 3px;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+#content-box .autoHeight {
+	height: auto;
+}
+
+.blind {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+}
+
+div.rename {
+	float: left;
+	white-space: nowrap;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.noLink,.noLink:hover {
+	text-decoration: none;
+	color: #666666;
+	cursor: default;
+}
+
+div#documents div.upload label.hasTip {
+  margin: 0;
+  padding: 5px 4px 0 3px;
+}
+
+div#documents div.upload input#iszip.pull-left {
+  border: medium none;
+  margin: 6px 0 0 15px;
+  position: relative;
+}
+
+div#documents dl.tabs {
+  margin: 10px 0 0;
+}
+
+div#documents div.current {
+  margin: 0 0 20px;
+}
+
+div#documents div#toolbar ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+
+div#documents div#toolbar ul li {
+  float: left;
+  margin: 0;
+  padding: 0 20px 0 0;
+}
+
+div#documents .empty { /* "empty message" should be visually separated from descripion */
+	padding-top: 20px;
+}
+
+.confirm {
+	border: 1px solid #A0A0A0;
+	padding: 10px;
+	text-align: center;
+}
+
+.confirm label {
+	bottom: 2px;
+	font-weight: bold;
+	padding-left: 10px;
+	position: relative;
+}
+
+.confirm a {
+	display: block;
+	padding: 5px;
+}
+
+#documents #search {
+	float: none;
+	height: auto;
+	margin: 0;
+	padding-bottom: 30px;
+	position: static;
+	width: auto;
+}
+
+#documents #search input.checkbox {
+  float: left;
+  margin: 0;
+}
+
+#documents #search label.inline {
+  float: left;
+  padding: 0 15px 0 5px;
+}
+
+#documents #search .nowrap {
+    display: block;
+    white-space: nowrap;
+    float: left;
+}
+
+#documents #search fieldset.radio {
+  margin: 0;
+  padding: 0;
+}
+
+#documents #search td {
+	border: medium none;
+	padding: 3px;
+}
+
+#documents #search tr {
+	border: medium none;
+}
+
+#documents #search .openSearch {
+	background-image: url("../images/icon-16-unpack.png");
+	background-repeat: no-repeat;
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	padding-left: 25px;
+}
+
+#documents #search .closeSearch {
+	background-image: url("../images/icon-16-pack.png");
+	background-repeat: no-repeat;
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	margin-bottom: 10px;
+	padding-left: 25px;
+}
+
+#joomdocModule ul {
+	margin: 0;
+	padding: 0.5em 0;
+}
+
+#joomdocModule li {
+	display: block;
+	float: none;
+	height: auto;
+	text-align: left;
+	width: auto;
+}
+
+#joomdocModule a {
+	display: block;	
+}
+
+#joomdocModule strong {
+	display: block;	
+}
+
+#joomdocModule li.icon {
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding: 0 0 0.5em 2em;
+}
+
+form#adminForm div#joomdoc table.adminlist {
+  width: auto;
+}
+
+form#adminForm div#joomdoc div#MooTreeWrap { /*for fx.Slide we must set wrapper manually */
+  float: left;	
+  width: 20%;
+}
+	
+form#adminForm div#joomdoc div#MooTree {
+  background-color: #FFFFFF;
+  border: 1px solid silver;
+  margin-right: 5px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+div#MooTree {
+    border: none !important;
+}
+
+div#MooTree div.mooTree_node {
+	white-space: normal;
+}
+
+div#MooTree div.mooTree_node div.mooTree_text {
+	min-height: 15px;
+	height: auto;
+}
+
+table.adminlist td {
+    padding-left: 8px;
+}
+table.adminlist td, table.adminlist th {
+    padding: 4px;
+}
+
+.symlink {
+  background: url("../images/icon-16-symlink.png") no-repeat scroll 1px 2px #F0F0EE;
+  border: 1px solid #D5D5D5;
+  clear: left;
+  display: block;
+  font-size: 1.15em;
+  padding-bottom: 2px;
+  padding-left: 24px;
+  padding-top: 2px;
+}
+
+.addSymLink {
+  background: url("../images/icon-16-symlink.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 16px;
+  margin-right: 5px;
+  width: 16px;
+}
+
+.symlinkSource {
+  background: url("../images/icon-symlink-source.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  float: left;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+.symlinkTarget {
+  background: url("../images/icon-symlink-target.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  float: left;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+.doc-width-60 {
+    width: 60%;
+}
+
+.doc-width-40 {
+    width: 40%;
+}
+
+.doc-width-100 {
+    width: 100%;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+.fltlft {
+    float: left;
+}
+
+fieldset.filter-bar {
+	min-height: 35px;
+	border: 0;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+#joomdoc {
+    
+    min-height: 300px;   
+    
+}
+
+.fltrt {
+    float: right;
+}
+
+.current, .m {
+    overflow: hidden; 
+}
+
+#cpanel {
+    margin-right: 25px;
+}
+
+.chzn-container-multi {
+    width: 220px !important;
+}
+.chzn-container-multi input {
+    width: 200px !important;
+}
+
+#preview {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+}
+
+#preloader {
+    margin: 0 10px;
+    display: none;
+    float: right;
+}
+
+.checkall-toggle {
+    padding: 10px 0px;
+}
+
+.checkall-toggle input[type="checkbox"] {
+    position: relative;
+    bottom: 1px;
+    margin: 0 5px 0 0;
+    width: 15px;
+    height: 15px;
+}

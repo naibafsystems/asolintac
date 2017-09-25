@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5.0" client="site">
+    <name>JOOMDOC_EXPLORER</name>
+    <author>ARTIO Ltd</author>
+    <creationDate>2015-04-24</creationDate>
+    <copyright>Copyright (C) 2015 ARTIO Ltd. All rights reserved.</copyright> 
+    
+    <license>GNU General Public License</license>
+    
+        <authorEmail>info@artio.net</authorEmail>
+    <authorUrl>http://www.artio.net/joomla-extensions/document-management</authorUrl>
+    <version>4.0.3</version>
+    <description>JOOMDOC_EXPLORER_DESC</description>
+    <!-- used only in alone package
+    <languages folder="language">
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc_explorer.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_joomdoc_explorer.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_explorer.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_joomdoc_explorer.sys.ini</language>
+    </languages>    
+    used only in alone package -->
+    <files>
+        <folder>tmpl</folder>
+        <filename>config.php</filename>
+        <filename>index.html</filename>
+        <filename module="mod_joomdoc_explorer">mod_joomdoc_explorer.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_joomdoc/models/fields">
+                <field type="modal_parents" name="parent" label="JOOMDOC_EXPLORER_PARENTS" default="" description="JOOMDOC_EXPLORER_PARENTS_DESC" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field type="list" name="layout" label="JOOMDOC_EXPLORER_LAYOUT" default="default"  description="JOOMDOC_EXPLORER_LAYOUT_DESC">
+                    <option value="default">JOOMDOC_EXPLORER_LAYOUT_DEFAULT</option>
+                </field>
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+           </fieldset>
+        </fields>
+    </config>
+</extension>   

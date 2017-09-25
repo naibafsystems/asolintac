@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" />
+		<field name="title" type="text" label="JGLOBAL_TITLE" description="JFIELD_TITLE_DESC" class="inputbox" required="true" />
+		<field name="type" type="list" label="JOOMDOC_FIELD_TYPE" required="true">
+			<option value="">-</option>
+			<option value="1">JOOMDOC_FIELD_TEXT</option>
+			<option value="2">JOOMDOC_FIELD_DATE</option>
+			<option value="3">JOOMDOC_FIELD_RADIO</option>
+			<option value="4">JOOMDOC_FIELD_SELECT</option>
+			<option value="5">JOOMDOC_FIELD_CHECKBOX</option>
+			<option value="6">JOOMDOC_FIELD_TEXTAREA</option>
+			<option value="7">JOOMDOC_FIELD_EDITOR</option>
+			<option value="8">JOOMDOC_FIELD_MULTI_SELECT</option>
+            <option value="9">JOOMDOC_FIELD_SUGGEST</option>
+		</field>
+		<field name="options" type="options" label="JOOMDOC_FIELD_OPTIONS" description="JOOMDOC_FIELD_OPTIONS_DESC" />
+		<field name="published" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" filter="intval" size="1" default="1">
+			<option value="1"> JPUBLISHED
+			</option>
+			<option value="0"> JUNPUBLISHED
+			</option>
+			<option value="-2"> JTRASHED
+			</option>
+		</field>
+		<field name="ordering" type="text" class="inputbox" label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" />
+		<field name="checked_out" type="hidden" filter="unset" />
+		<field name="checked_out_time" type="hidden" filter="unset" />
+		<field name="rules" type="rules" labelclass="hide" validate="rules" filter="rules">
+			<action name="joomdoc.field.searchable" title="JOOMDOC_FIELD_ACL_SEARCHABLE" description="JOOMDOC_FIELD_ACL_SEARCHABLE_DESC" />
+			<action name="joomdoc.field.frontend" title="JOOMDOC_FIELD_ACL_FRONTEND" description="JOOMDOC_FIELD_ACL_FRONTEND_DESC" />
+			<action name="joomdoc.field.edit" title="JOOMDOC_FIELD_ACL_EDIT" description="JOOMDOC_FIELD_ACL_EDIT_DESC" />
+			<action name="joomdoc.field.list" title="JOOMDOC_FIELD_ACL_LIST" description="JOOMDOC_FIELD_ACL_LIST_DESC" />
+		</field>
+		<field name="asset_id" type="hidden" />
+	</fieldset>
+	<fields name="params">
+		<fieldset name="html">
+			<field name="size" type="text" label="JOOMDOC_FIELD_PARAM_SIZE" size="1" description="JOOMDOC_FIELD_PARAM_SIZE_DESC" class="input-mini" />
+			<field name="maxlength" type="text" label="JOOMDOC_FIELD_PARAM_MAXLENGTH" size="1" description="JOOMDOC_FIELD_PARAM_MAXLENGTH_DESC" class="input-mini" />
+			<field name="rows" type="text" label="JOOMDOC_FIELD_PARAM_ROWS" size="1" description="JOOMDOC_FIELD_PARAM_ROWS_DESC" class="input-mini" />
+			<field name="cols" type="text" label="JOOMDOC_FIELD_PARAM_COLS" size="1" description="JOOMDOC_FIELD_PARAM_COLS_DESC" class="input-mini" />
+			<field name="required" type="radio" label="JOOMDOC_FIELD_PARAM_REQUIRED" description="JOOMDOC_FIELD_PARAM_REQUIRED_DESC" class="btn-group">
+				<option value="false">JNO</option>
+				<option value="true">JYES</option>
+			</field>
+			<field name="default" type="text" label="JOOMDOC_FIELD_PARAM_DEFAULT" description="JOOMDOC_FIELD_PARAM_DEFAULT_DESC" />
+			<field name="class" type="text" label="JOOMDOC_FIELD_PARAM_CLASS" description="JOOMDOC_FIELD_PARAM_CLASS_DESC" />
+			<field name="buttons" type="radio" label="JOOMDOC_FIELD_PARAM_BUTTONS" description="JOOMDOC_FIELD_PARAM_BUTTONS_DESC" class="btn-group">
+				<option value="false">JNO</option>
+				<option value="true">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

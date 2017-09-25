@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="general" label="JOOMDOC_GENERAL" description="" addfieldpath="/administrator/components/com_joomdoc/models/fields" addrulepath="/administrator/components/com_joomdoc/models/rules">
+        <field name="docroot" type="text" label="JOOMDOC_DOCUMENT_ROOT" description="JOOMDOC_DOCUMENT_ROOT_DESC" default="" size="60" class="input-xxlarge" required="true" />
+        <field name="download_id" type="text" validate="downloadid" label="JOOMDOC_DOWNLOAD_ID" description="JOOMDOC_DOWNLOAD_ID_DESC" default="" size="32" class="input-xxlarge" message="JOOMDOC_DOWNLOAD_ID_INVALID" />
+        <field name="file_deleting" type="list" default="1" label="JOOMDOC_FILE_DELETING" description="JOOMDOC_FILE_DELETING_DESC">
+            <option value="0">JOOMDOC_FORCE_DELETING</option>
+            <option value="1">JOOMDOC_TRASH_DELETING</option>
+        </field>
+        <field name="upload_type" type="list" default="1" label="JOOMDOC_UPLOAD_TYPE">
+            <option value="0">JOOMDOC_BROWSE_BUTTON</option>
+            <option value="1">JOOMDOC_DROP_AND_DRAG</option>
+        </field>
+        <field name="file_document_automatically" type="radio" class="btn-group" default="0" label="JOOMDOC_FILE_DOCUMENT_AUTOMATICALLY" description="JOOMDOC_FILE_DOCUMENT_AUTOMATICALLY_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="edit_document_immediately" type="radio" class="btn-group" default="0" label="JOOMDOC_EDIT_DOCUMENT_IMMEDIATELY" description="JOOMDOC_EDIT_DOCUMENT_IMMEDIATELY_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>        
+        <!-- <field name="document_layout" type="list" default="0" label="JOOMDOC_DOCUMENT_LAYOUT" description="JOOMDOC_DOCUMENT_LAYOUT_DESC"> <option value="0">JOOMDOC_DETAILED_LIST_LAYOUT</option> <option 
+        value="1">JOOMDOC_SIMPLE_LIST_LAYOUT</option> <option value="2">JOOMDOC_ICONS_LAYOUT</option> </field> -->
+                <field name="use_explorer" type="radio" class="btn-group" default="1" label="JOOMDOC_USE_EXPLORER" description="JOOMDOC_USE_EXPLORER_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="folders_first_site" type="radio" class="btn-group" default="0" label="JOOMDOC_FOLDERS_FIRST_SITE" description="JOOMDOC_JOOMDOC_FOLDERS_FIRST_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="folders_first_admin" type="radio" class="btn-group" default="0" label="JOOMDOC_FOLDERS_FIRST_ADMIN" description="JOOMDOC_JOOMDOC_FOLDERS_FIRST_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="" description="" type="spacer" />
+        <field name="" description="" type="spacer" />
+        <field name="default_description" type="editor" label="JOOMDOC_DEFAULT_DESCRIPTION" description="JOOMDOC_DEFAULT_DESCRIPTION_DESC" buttons="false" filter="safehtml" width="70%" />
+    </fieldset>
+    <fieldset name="basic" label="JOOMDOC_DOCUMENT_LIST_DEFAULT">
+        <field name="show_subfolders" type="radio" label="JOOMDOC_SHOW_SUBFOLDERS"
+               description="JOOMDOC_SHOW_SUBFOLDERS_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="files_without_doc" type="radio" label="JOOMDOC_FIELD_FILES_WITHOUT_DOC_LABEL"
+               description="JOOMDOC_FIELD_FILES_WITHOUT_DOC_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="document_ordering" type="list" label="JOOMDOC_DOCUMENT_ORDERING"
+               description="JOOMDOC_DOCUMENT_ORDERING_DESC">
+            <option value="0"> - </option>
+            <option value="ordering">JOOMDOC_ORDERING_ORDERING</option>
+            <option value="title">JOOMDOC_ORDERING_TITLE</option>
+            <option value="publish_up">JOOMDOC_ORDERING_DATE</option>
+        </field>
+        <field name="file_ordering" type="list" label="JOOMDOC_FILE_ORDERING"
+               description="JOOMDOC_FILE_ORDERING_DESC">
+            <option value="0"> - </option>
+            <option value="path">JOOMDOC_ORDERING_PATH</option>
+            <option value="upload">JOOMDOC_ORDERING_UPLOAD</option>
+            <option value="hits">JOOMDOC_ORDERING_HITS</option>
+        </field>
+        <field name="ordering_direction" type="list" label="JOOMDOC_ORDERING_DIRECTION"
+               description="JOOMDOC_ORDERING_DIRECTION_DESC">
+            <option value="asc">JOOMDOC_ORDERING_DIRECTION_ASCENDING</option>
+            <option value="desc">JOOMDOC_ORDERING_DIRECTION_DESCENDING</option>
+        </field>    
+        <field name="show_fileicon" type="radio" label="JOOMDOC_SHOW_FILEICON"
+               description="JOOMDOC_SHOW_FILEICON_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_filesize" type="radio" label="JOOMDOC_SHOW_FILESIZE"
+               description="JOOMDOC_SHOW_FILESIZE_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_created" type="radio" label="JOOMDOC_SHOW_CREATED"
+               description="JOOMDOC_SHOW_CREATED_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_modified" type="radio" label="JOOMDOC_SHOW_MODIFIED"
+               description="JOOMDOC_SHOW_MODIFIED_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_hits" type="radio" label="JOOMDOC_SHOW_HITS"
+               description="JOOMDOC_SHOW_HITS_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_open_file" type="radio" label="JOOMDOC_SHOW_OPEN_FILE"
+               description="JOOMDOC_SHOW_OPEN_FILE_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_download_file" type="radio" label="JOOMDOC_SHOW_DOWNLOAD_FILE"
+               description="JOOMDOC_SHOW_DOWNLOAD_FILE_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_open_folder" type="radio" label="JOOMDOC_SHOW_OPEN_FOLDER"
+               description="JOOMDOC_SHOW_OPEN_FOLDER_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_file_desc" type="radio" label="JOOMDOC_SHOW_FILE_DESC"
+               description="JOOMDOC_SHOW_FILE_DESC_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_folder_desc" type="radio" label="JOOMDOC_SHOW_FOLDER_DESC"
+               description="JOOMDOC_SHOW_FOLDER_DESC_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+        <field name="show_license" type="radio" label="JOOMDOC_SHOW_LICENSE_DESC"
+               description="JOOMDOC_SHOW_LICENSE_DESC_DESC" default="1" class="btn-group">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>            
+    </fieldset>
+    <fieldset name="searching" label="JOOMDOC_SEARCH">
+        <field name="use_search" type="radio" class="btn-group" default="0" label="JOOMDOC_USE_SEARCH" description="JOOMDOC_USE_SEARCH_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_show_parent" type="radio" class="btn-group" default="1" label="JOOMDOC_SEARCH_SHOW_PARENT" description="JOOMDOC_SEARCH_SHOW_PARENT_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_keyword" type="list" class="btn-group" default="1" label="JOOMDOC_SEARCH_KEYWORD" description="JOOMDOC_SEARCH_KEYWORD_DESC">
+            <option value="1">JOOMDOC_SINGLE_FIELD</option>
+            <option value="2">JOOMDOC_SEPARATE_FIELD</option>
+        </field>
+        <field name="search_show_title" type="radio" class="btn-group" default="1" label="JOOMDOC_SEARCH_SHOW_TITLE" description="JOOMDOC_SEARCH_SHOW_TITLE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_show_text" type="radio" class="btn-group" default="1" label="JOOMDOC_SEARCH_SHOW_TEXT" description="JOOMDOC_SEARCH_SHOW_TEXT_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_show_metadata" type="radio" class="btn-group" default="1" label="JOOMDOC_SEARCH_SHOW_METADATA" description="JOOMDOC_SEARCH_SHOW_METADATA_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_show_fulltext" type="radio" class="btn-group" default="1" label="JOOMDOC_SEARCH_SHOW_FULLTEXT" description="JOOMDOC_SEARCH_SHOW_FULLTEXT_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_show_type" type="radio" class="btn-group" default="1" label="JOOMDOC_SEARCH_SHOW_TYPE" description="JOOMDOC_SEARCH_SHOW_TYPE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_types" type="list" multiple="multiple" size="5" label="JOOMDOC_SEARCH_SHOW_TYPES" description="JOOMDOC_SEARCH_SHOW_TYPES_DESC">
+            <option value="-">JOOMDOC_SEARCH_NONE</option>
+            <option value="0">JOOMDOC_SEARCH_ANYKEY</option>
+            <option value="1">JOOMDOC_SEARCH_ALLKEY</option>
+            <option value="2">JOOMDOC_SEARCH_PHRASE</option>
+            <option value="3">JOOMDOC_SEARCH_REGEXP</option>
+        </field>
+        <field name="search_default_type" type="list" label="JOOMDOC_SEARCH_DEFAULT_TYPE" description="JOOMDOC_SEARCH_DEFAULT_TYPE_DESC">
+            <option value="0">JOOMDOC_SEARCH_ANYKEY</option>
+            <option value="1">JOOMDOC_SEARCH_ALLKEY</option>
+            <option value="2">JOOMDOC_SEARCH_PHRASE</option>
+            <option value="3">JOOMDOC_SEARCH_REGEXP</option>
+        </field>
+        <field name="search_show_order" type="radio" class="btn-group" default="1" label="JOOMDOC_SEARCH_SHOW_ORDER" description="JOOMDOC_SEARCH_SHOW_ORDER_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="search_orders" type="list" multiple="multiple" size="5" label="JOOMDOC_SEARCH_SHOW_ORDERS" description="JOOMDOC_SEARCH_SHOW_ORDERS_DESC">
+            <option value="-">JOOMDOC_SEARCH_NONE</option>
+            <option value="newest">JOOMDOC_SEARCH_NEWEST</option>
+            <option value="oldest">JOOMDOC_SEARCH_OLDEST</option>
+            <option value="hits">JOOMDOC_SEARCH_POPULAR</option>
+            <option value="title">JOOMDOC_SEARCH_ALPHA</option>
+        </field>
+        <field name="search_default_order" type="list" label="JOOMDOC_SEARCH_DEFAULT_ORDER" description="JOOMDOC_SEARCH_DEFAULT_ORDER_DESC">
+            <option value="newest">JOOMDOC_SEARCH_NEWEST</option>
+            <option value="oldest">JOOMDOC_SEARCH_OLDEST</option>
+            <option value="hits">JOOMDOC_SEARCH_POPULAR</option>
+            <option value="title">JOOMDOC_SEARCH_ALPHA</option>
+        </field>
+    </fieldset>
+       
+    <fieldset name="display" label="JOOMDOC_DISPLAY">
+        <field name="icon_theme" type="modal_icons" label="JOOMDOC_ICON_THEME" description="JOOMDOC_ICON_THEME_DESC" default="default" />
+        <field name="icon_theme_backend" type="modal_icons" default="default" label="JOOMDOC_ICO_THEME" description="JOOMDOC_ICO_THEME_DESC" />
+        <field name="display_favorite" type="radio" class="btn-group" default="1" label="JOOMDOC_DISPLAY_FAVORITE" description="JOOMDOC_DISPLAY_FAVORITE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="display_signature" type="radio" class="btn-group" default="1" label="JOOMDOC_DISPLAY_SIGNATURE" description="JOOMDOC_DISPLAY_SIGNATURE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+    <fieldset name="metadata" label="JOOMDOC_METADATA">
+        <field name="default_title" type="text" label="JOOMDOC_DEFAULT_TITLE" description="JOOMDOC_DEFAULT_TITLE_DESC" default="JoomDOC" size="60" />
+        <field name="explorer_root" type="text" default="Documents" label="JOOMDOC_EXPLORER_ROOT" description="JOOMDOC_EXPLORER_ROOT_DESC" size="60" />
+        <field name="default_title" type="text" label="JOOMDOC_DEFAULT_TITLE" description="JOOMDOC_DEFAULT_TITLE_DESC" size="60" />
+        <field name="default_metakeywords" type="textarea" label="JOOMDOC_METAKEYWORDS" description="JOOMDOC_METAKEYWORDS_DESC" rows="2" cols="80" />
+        <field name="default_metadescription" type="textarea" label="JOOMDOC_METADESCRIPTION" description="JOOMDOC_METADESCRIPTION_DESC" rows="8" cols="80" />
+    </fieldset>
+    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+        <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules" filter="rules" component="com_joomdoc" section="component" />
+    </fieldset>
+    <fieldset name="advanced" label="JOOMDOC_ADVANCED">
+        <field name="document_access" type="list" label="JOOMDOC_DOCUMENT_ACCESS" default="1">
+            <option value="1">JOOMDOC_DEFAUTL_ACCESS_LEVEL</option>
+            <option value="2">JOOMDOC_SINGLE_USER</option>
+        </field>
+        <!--
+        <field name="edocs_list" type="list" label="JOOMDOC_EDOCS_LIST" default="0" description="JOOMDOC_EDOCS_DETAIL_DESC">
+            <option value="0">JOOMDOC_NONE</option>
+            <option value="1">JOOMDOC_BEFORE_TEXT</option>
+            <option value="2">JOOMDOC_AFTER_TEXT</option>
+        </field>
+        -->
+        <field name="edocs_detail" type="list" label="JOOMDOC_EDOCS_DETAIL" default="0" description="JOOMDOC_EDOCS_LIST_DESC">
+            <option value="0">JOOMDOC_NONE</option>
+            <option value="1">JOOMDOC_BEFORE_TEXT</option>
+            <option value="2">JOOMDOC_AFTER_TEXT</option>
+        </field>        
+                <field name="access_handling" type="radio" default="1" label="JOOMDOC_ACCESS_HANDLING" description="JOOMDOC_ACCESS_HANDLING_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="virtual_folder" type="radio" label="JOOMDOC_VIRTUAL_FOLDER"
+               description="JOOMDOC_VIRTUAL_FOLDER_DESC" default="0" class="btn-group">
+            <option value="1">JON</option>
+            <option value="0">JOFF</option>
+        </field>        
+        <field name="confirm_overwrite" type="radio" label="JOOMDOC_CONFIRM_OVERWRITE"
+               description="JOOMDOC_CONFIRM_OVERWRITE_DESC" default="0" class="btn-group">
+            <option value="1">JON</option>
+            <option value="0">JOFF</option>
+        </field>        
+    </fieldset>
+</config>
